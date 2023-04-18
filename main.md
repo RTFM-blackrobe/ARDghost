@@ -1,18 +1,22 @@
-ARDghost
+ARDghost - RTFM
 
 If you need to block people from streaming your screen 
 and stealing your information
 use this script:
 
+in your terminal using sudo:
 
-place ghostintheshell.sh in opt 
-place com.apple.ghostintheshell in Users/home/Library/Launchagents/ 
-and run: launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell
-this will load the plist as a startup item.
+1: git clone https://github.com/RTFM-blackrobe/ARDghost
+2: cd ARDghost
+3: mv ghostintheshell.sh /opt
+4: mv com.apple.ghostintheshell /Users/{your home folder name}/Library/LaunchAgents
+5:launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell
 
-its in bash 
+the script wull load as a startup item on boot. if you want to disable it 
+just go to the folders ad delete the plist and the .sh files
+
 works with latest versions of osx 
-Monterrey and Ventura 
+Monterrey and Ventura.
 
 cheers!
 stay safe. 
