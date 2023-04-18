@@ -10,12 +10,16 @@ use this script:
 in your terminal using sudo:
 
 1: git clone https://github.com/RTFM-blackrobe/ARDghost
+
 2: cd ARDghost
+
 3: mv ghostintheshell.sh /opt
+
 4: mv com.apple.ghostintheshell /Users/{your home folder name}/Library/LaunchAgents
+
 5:launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell
 
-the script wull load as a startup item on boot. if you want to disable it 
+the script will load as a startup item on boot. if you want to disable it 
 just go to the folders ad delete the plist and the .sh files
 
 works with latest versions of osx 
