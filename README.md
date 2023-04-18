@@ -13,11 +13,19 @@ in your terminal using sudo:
 
 2: cd ARDghost
 
-3: mv ghostintheshell.sh /opt
+3: mv ghostintheshell.sh /opt && cd /opt
 
-4: mv com.apple.ghostintheshell /Users/{your home folder name}/Library/LaunchAgents
+4 chmod+ ghostintheshell.sh
 
-5:launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell
+5 cd - 
+
+6: mv com.apple.ghostintheshell /Users/YOUR_HOME_FOLDER_NAME/Library/LaunchAgents
+
+7:launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell
+
+8: reboot the f**** machine 
+
+you're done!
 
 the script will load as a startup item on boot. if you want to disable it 
 just go to the folders ad delete the plist and the .sh files
