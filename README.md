@@ -15,7 +15,7 @@ in your terminal using sudo:
 
 3: mv ghostintheshell.sh /opt && cd /opt
 
-4 chmod+ ghostintheshell.sh
+4 chmod+ ghostintheshell.sh 
 
 5 cd - 
 
@@ -24,6 +24,13 @@ in your terminal using sudo:
 7:launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell
 
 8: reboot the f**** machine 
+________________________________________________________
+if you want the script to load not on load but at boot do this in step 4: 
+
+sudo chown root:wheel /Library/LaunchAgents/com.example.my-script.plist
+sudo chmod 644 /Library/LaunchAgents/com.example.my-script.plist
+
+
 
 you're done!
 
