@@ -19,13 +19,13 @@ in your terminal using sudo:
 
 5 cd - 
 
-6: mv com.apple.ghostintheshell.plist /Users/YOUR_HOME_FOLDER_NAME/Library/LaunchAgents
+6: mv com.apple.ghostintheshell.plist /Users/HOME_FOLDER_NAME/Library/LaunchAgents
 
-7:sudo chown root:wheel /Library/LaunchAgents/com.apple.ghostintheshell.plist
+7:sudo chown root:wheel /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.apple.ghostintheshell.plist
 
-8:sudo chmod 644 /Library/LaunchAgents/com.example.my-script.plist
+8:sudo chmod 644 /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.example.my-script.plist
 
-9:launchctl load Users/home/Library/Launchagents/com.apple.ghostintheshell.plist
+9:launchctl load /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.apple.ghostintheshell.plist
 
 10: reboot the f**** machine 
 ________________________________________________________
@@ -38,7 +38,7 @@ just go to the folders ad delete the plist and the .sh files
 works with latest versions of osx 
 Monterrey and Ventura.
 
-cheers!
+cheers buddy !
 stay safe. 
 
-created by ivan morales 
+created by ivan morales. 
