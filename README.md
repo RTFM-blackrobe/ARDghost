@@ -23,7 +23,7 @@ in your terminal using sudo:
 
 7:sudo chown root:wheel /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.apple.ghostintheshell.plist
 
-8:sudo chmod 644 /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.example.my-script.plist
+8:sudo chmod 644 /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.apple.ghostintheshell.plist
 
 9:launchctl load /Users/HOME_FOLDER_NAME/Library/LaunchAgents/com.apple.ghostintheshell.plist
 
