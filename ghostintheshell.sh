@@ -53,4 +53,22 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 2
 
 #port 22 block
 sudo pfctl -t blocklist -T add 0.0.0.0/0 port 22
+#_____
 
+#Disable Bonjour:
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
+
+#Disable Remote Pairing Tool:
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.remotepairtool.plist
+
+#Disable Printer Sharing:
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.cups.cupsd.plist
+
+#Disable NetBIOS and NPC (NetBIOS Name Service):
+
+sudo launchctl unload -w /System/Library/LaunchDaemons/netbios.plist
+sudo launchctl unload -w /System/Library/LaunchDaemons/nmbd.plist
+
+#Block all incoming traffic at the application layer firewall:
+
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 2
