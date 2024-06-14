@@ -30,6 +30,7 @@ in your terminal using sudo:
 10: reboot the f**** machine 
 ________________________________________________________
 
+this is the second update to this repository. keep pseudopolititians, miners, and extorsionists out of your shit!!! 
 you're done!
 
 the script will load as a startup item on boot. if you want to disable it 
